@@ -111,7 +111,7 @@ width:100%;
 height:800;
 }
 #topmiddle{
-background-color: #964B00;
+background-color: #FDF3E7;
 float:left;
 width:100%;
 display:inline;
@@ -129,6 +129,7 @@ background-color: green;
 height:800;
 float:left;
 width:100%;
+color:white;
 }
 .img{
 	border-radius: 100;
@@ -159,24 +160,25 @@ p{
 	text-align: center;
 	font-size: 35;
 }
-.div{
-	margin-left: 500;
-	font-size:25;
-	margin-top: 80;
-}
 .fimg{
 	width:150;
+}
+.last{
+	float:left;
+	display: inline;
 }
 </style>
 </head>
 
 <body>
-<ul id="menu">
+	<div id="menu">
+<ul >
 	<li id="li1"><a href="#top">HOME</a></li>
 	<li id="li2"><a href="#topmiddle">Technologies</a></li>
 	<li id="li3"><a href="#middle">Projects</a></li>
 	<li id="li4"><a href="#bottom">BOTTOM</a></li>
 </ul>
+</div>
 <div id="top">
 	<div style="float:left;width50%">
 <img id="img1" src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11054502_728970583886618_370725838487420951_n.jpg?oh=fce05f1abb155c22913ab848a82f4a30&oe=565DAC59" width=500 height=500/></div>
@@ -196,7 +198,7 @@ My area of interest are:DataStructure,Algorithm,DataBase,Operating System.
 </div>
 </div>
 <div id="topmiddle">
-<h1 style="text-align:center;color:black">Technologies in which I have worked.</h1>
+<h1 style="text-align:center;color:black;margin-top:50">Technologies in which I have worked.</h1>
 <p class="newclass1"><img class="img" src="images/ASP.NET_.png" width=200 height=200/></p>
 <p class="newclass1"><img class="img" src="images/Advantages,P20of,P20DBMS.jpg.pagespeed.ce.w7czTcu4ZV.jpg" width=200 height=200/></p>
 <p class="newclass1"><img class="img" src="images/html.jpg" width=200 height=200/></p>
@@ -214,14 +216,14 @@ My area of interest are:DataStructure,Algorithm,DataBase,Operating System.
 <p class="newclass"><img class="img" src="images/storage_operating_systems.jpg" width=200 height=200/></p>
 <p class="newclass"><img class="img" src="images/cs161logo.png" width=200 height=200/></p>
 
-<div ><button id="button" style="position:static;width:100;height:50;font-size:20;background-color:#558C89;border-size:0">More...</button></div>
+<div ><button id="button" style="position:static;width:100;height:50;font-size:20;background-color:color:brown;border-size:0;color:white">More...</button></div>
 </div>
 
 <div id="middle">
 <p id="circle"><br>WEB DEVELOPMENT and MAINTENENCE</p>
 <p id="circle"><br>COMMUNITY DETECTION IN SOCIAL NETWORKS</p>
 <p id="circle"><br>COMPUTER DEPARTMENT</p>
-<p style="width:25%;margin-left:80;border-width: 5px;border-color: black">
+<p style="width:25%;margin-left:100;border-width: 5px;border-color: black;margin-top:50">
 <b>OBJECTIVE</b>-An online Computer Science Department web portal for Teacher and student interaction.
 <br>
 <b>LOCATION</b>-HPES, Noida<br>
@@ -231,7 +233,7 @@ My area of interest are:DataStructure,Algorithm,DataBase,Operating System.
 <b>Database:</b> SQL Server 2005.<br>
 <b>DURATION-</b> June-July, 2013<br>
 </p>
-<p style="width:25%;margin-left:80;border-width: 5px;border-color: black">
+<p style="width:25%;margin-left:80;border-width: 5px;border-color: black;margin-top:50">
 <b>OBJECTIVE-</b>To understand various interactions among the group of persons in that community and with others.
 <br>
 <b>LOCATION-</b>IIT Guwahati<br>
@@ -239,7 +241,7 @@ My area of interest are:DataStructure,Algorithm,DataBase,Operating System.
 Python.<br>
 <b>DURATION-</b> June-July, 2014<br>
 </p>
-<p style="width:25%;margin-left:80;border-width: 5px;border-color: black">
+<p style="width:25%;margin-left:80;border-width: 5px;border-color: black;margin-top:50">
 <b>OBJECTIVE-</b>An online Computer Science Department web portal for Teacher and student interaction.<br>
 <b>LOCATION-</b>HPES, Noida<br>
 <b>TOOLS -</b><br>
@@ -252,21 +254,35 @@ Python.<br>
 <div id="bottom">
 
 <form method=get class="form">
-		<div><div>GET IN TOUCH</div><div>SEND US A MESSAGE</div></div>
+		<div class="last"><div style="float:left;width:45%;margin-left:80"><p style="font-size:40">01/GET IN<br> TOUCH</p>
+		
+			<p style="margin-top:20">
+			I would love to speak to you.Feel free to call,send us an email,<br>Tweet us or simply complete the enquiry form.</p>
+			<p style="margin-top:20">
+			<img class="fimg" src="images/name-clipart-name-sign-md.png" style="height:80">Ekansh Sharma<br>
+			<img class="fimg" src="images/iphone4-mini-white-02.png" style="height:80">+917308099461<br>
+			<img class="fimg" src="images/raphael_mail_flat-circle-white-on-green-gradient_512x512.png" style="height:80">ekanshsharmacse11@gmail.com<br>
+			<img class="fimg" src="images/messages.png" style="height:80"><br></p>
+		</div>
+
+
 			<!--<center>-->
-		<div class="div">
-		<img class="fimg" src="images/name-clipart-name-sign-md.png" style="height:80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" style="height:30; width:120" placeholder="Name"/><br />
-		<img class="fimg" src="images/phone-icon.png" style="height:80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="phone" style="height:30; width:120" 
-		placeholder="+917308099461"/><br />
-		<img class="fimg" src="images/email.svg" style="height:80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" style="height:30; width:120" 
-		placeholder="ekanshsharmacse11@gmail.com"/><br />
-		<img class="fimg" src="images/manage-recover-your-facebook-chat-messages-history.w654.jpg" style="height:80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="comment" rows=5
-		cols=50 placeholder="Enter something"></textarea><br />
+		<div class="div" style="width:45%;float:left">
+			<p style="font-size:40">02/SEND ME A<br>MESSAGE</p>
+			<p style="margin-top:20">
+		<input type="text" id="name" style="height:30;width:150;color:green" placeholder="Your Name"/>
+		<br><br><br>
+		<input type="text" id="phone" style="height:30;width:150;color:green" placeholder="+917308099461"/>
+		<br /><br><br>
+		<input type="text" id="email" style="height:30;width:150;color:green" placeholder="Email Address"/>
+		<br /><br><br>
+		<textarea id="comment" rows=5 cols=50 placeholder="Your Message;color:green"></textarea>
+		<br /><br><br>
 	<br />
-		<input type=submit id="submit" style="height:100;width:120;font-size:80" >
+		<input type=submit id="submit" style="height:60;width:150;font-size:40;background-color:black;color:white" ></p>
 	<!--</center>-->
 </div>
-	
+	</div>
 	</form>
 </div>
 </body>
