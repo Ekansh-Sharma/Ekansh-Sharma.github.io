@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="external.js">
+</script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="box">
+<div class="display"><input type="text" readonly size="18" id="d"></div>
+<div class="keys">
+    <p><input type="button" class="button gray" value="mrc" onclick='create("What")'>
+    <input type="button" class="button gray" value="m-" onclick='create("is")'>
+    <input type="button" class="button gray" value="m+" onclick='create("this")'>
+    <input type="button" class="button pink" value="/" onclick='add("/")'></p>
+    <p>
+        <input type="button" class="button black" value="7" onclick='add("7")'>
+        <input type="button" class="button black" value="8" onclick='add("8")'>
+        <input type="button" class="button black" value="9" onclick='add("9")'>
+        <input type="button" class="button pink" value="*" onclick='add("*")'></p>
+    <p>
+        <input type="button" class="button black" value="4" onclick='add("4")'>
+        <input type="button" class="button black" value="5" onclick='add("5")'>
+        <input type="button" class="button black" value="6" onclick='add("6")'>
+        <input type="button" class="button pink" value="-" onclick='add("-")'></p>
+    <p>
+        <input type="button" class="button black" value="1" onclick='add("1")'>
+        <input type="button" class="button black" value="2" onclick='add("2")'>
+        <input type="button" class="button black" value="3" onclick='add("3")'>
+        <input type="button" class="button pink" value="+" onclick='add("+")'></p>
+    <p>
+        <input type="button" class="button black" value="0" onclick='add("0")'>
+        <input type="button" class="button black" value="." onclick='add(".")'>
+        <input type="button" class="button black" value="C" onclick='create("")'>
+        <input type="button" class="button orange" value="=" onclick='res()'></p>
+</div>
+</div>
+</body>
