@@ -69,7 +69,7 @@ GameManager.prototype.addStartTiles = function () {
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     //var value = Math.random() < 0.9 ? 2 : 4;
-    var value=1;
+    var value=1;                                                //make dynamic assignment as 1
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
@@ -257,7 +257,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && fab(other.value+tile.value)) {
+          if (other && fab(other.value+tile.value)) {       //called the function
             return true; // These two tiles can be merged
           }
         }
@@ -270,9 +270,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
 
 
-//created new function
-
-
+//fuction to check that the sum of tiles is fabonacci number or not
 function fab(a,b){
 temp=a+b;first11=1;second11=1;res=1;
 for(i=1;res<=temp;i++)
