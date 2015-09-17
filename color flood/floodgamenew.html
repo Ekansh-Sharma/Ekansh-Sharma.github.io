@@ -7,7 +7,7 @@ var start_table = new Array (n_rows);
 for (var row = 0; row < n_rows; row++) {
     start_table[row] = new Array (n_cols);
 }
-var colours = "blue red green yellow pink purple".split (/\s+/);
+var colours = "blue red green yellow pink purple".split (" ");
 
 /* DOM functions. */
 
@@ -122,9 +122,9 @@ function flood (colour, initial)
 
 function help ()
 {
-    alert ("Press the circle buttons to flood fill the image\n"+
+    alert ("Press the side buttons to flood fill the image\n"+
            "with the colour from the top left corner. Fill the\n"+
-           "entire image with the same colour in twenty-five or\n"+
+           "entire image with the same colour in twenty-two or\n"+
            "fewer flood fills.");
 }
 
