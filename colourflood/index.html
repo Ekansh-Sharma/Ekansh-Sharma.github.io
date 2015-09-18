@@ -1,10 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>2048</title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script type="text/javascript">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script type="text/javascript">
 
 var n_rows = 14;
 var n_cols = 14;
@@ -185,7 +191,8 @@ function new_game ()
     create_table ();
 }
 </script>
-<style type="text/css">
+<style ty
+  <style type="text/css">
 .piece {
     width: 28px;
     height: 30px;
@@ -231,7 +238,24 @@ background-color: fuchsia;
 </style>
 </head>
 <body>
-    <br /><br /><br /><br />
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <a class="restart-button" onclick="new_game ()">New Game</a>
+    </div>
+
+   
+
+   
+   <br /><br /><br /><br />
     <center>
 <table>
     
@@ -286,11 +310,6 @@ background-color: fuchsia;
         </tr>
         <tr valign="top">
           <td valign="top">
-            <input type="submit" value="New game" onclick="new_game ()">
-          </td>
-        </tr>
-        <tr valign="top">
-          <td valign="top">
             <input type="submit" value="Help" onclick="help ()">
           </td>
         </tr>
@@ -302,5 +321,18 @@ background-color: fuchsia;
         </tr>
 -->
       </table></center></div>
+    
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
 </body>
 </html>
